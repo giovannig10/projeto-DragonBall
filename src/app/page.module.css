@@ -1,0 +1,132 @@
+.container {
+  min-height: 100vh;
+  background-color: #fff7ed;
+  padding: 2rem;
+}
+
+.headerSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 2.25rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #1e40af;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.buttonContainer {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.buttonWrapper {
+  margin-bottom: 1.5rem;
+}
+
+.searchButton {
+  background-color: #ff6b35;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid #1e40af;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.searchButton:hover:not(:disabled) {
+  background-color: #ea580c;
+  transform: translateY(-2px);
+}
+
+.searchButton:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.cardsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.characterCard {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 16px -4px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+  width: 320px;
+  max-width: 100%;
+  border: 2px solid #ff6b35;
+  transition: all 0.3s ease;
+}
+
+.characterCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px -4px rgba(0, 0, 0, 0.15);
+  border-color: #1e40af;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.characterImage {
+  border-radius: 0.5rem;
+}
+
+.characterName {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #1e40af;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.characterInfo {
+  font-size: 0.875rem;
+}
+
+.characterDetail {
+  color: #4b5563;
+  margin-bottom: 0.25rem;
+}
+
+.detailLabel {
+  font-weight: 600;
+  color: #ff6b35;
+}
+
+.characterDescription {
+  color: #4b5563;
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.emptyState {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 3rem 0;
+}
+
+.emptyStateText {
+  text-align: center;
+  color: #6b7280;
+  font-size: 1.25rem;
+}
