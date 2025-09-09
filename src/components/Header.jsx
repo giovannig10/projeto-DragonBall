@@ -41,18 +41,7 @@ export default function Header() {
             Explorar Universo
           </button>
         </nav>
-
-        {/* Menu Mobile */}
-        <button 
-          onClick={() => setMenuAberto(!menuAberto)}
-          className={styles.mobileMenuButton}
-        >
-          ☰
-        </button>
       </div>
-
-      
-    
     </header>
   );
 }

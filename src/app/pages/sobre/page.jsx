@@ -26,19 +26,10 @@ export default function Sobre() {
                     <div className={styles.personalContent}>
                         <div className={styles.textCard}>
                             <p className={styles.personalText}>
-                                {/* Aqui você pode colocar seu texto pessoal */}
-                                Dragon Ball não é apenas um anime para mim, é uma fonte inesgotável de inspiração e superação. 
-                                Desde criança, acompanhar a jornada do Goku me ensinou sobre a importância da perseverança, 
-                                da amizade e de nunca desistir dos seus sonhos, independentemente dos obstáculos.
-                                <br /><br />
-                                As batalhas épicas, os momentos de crescimento dos personagens e a constante busca por se 
-                                tornar mais forte me motivaram em diversos momentos da minha vida. Dragon Ball me mostrou 
-                                que sempre há espaço para crescer e que a verdadeira força vem de proteger aquilo que amamos.
-                                <br /><br />
-                                Cada saga traz lições valiosas sobre superação, trabalho em equipe e a importância de ter 
-                                objetivos claros. É mais do que entretenimento, é uma filosofia de vida que carrego comigo.
+                            Dragon Ball entrou na minha vida quando eu era criança, por influência do meu irmão. Desde então, o anime se tornou uma presença constante no meu dia a dia — seja por meio de brinquedos, do próprio anime, dos jogos ou até mesmo dos filmes.
                             </p>
-                        </div>
+                            <p>Dragon Ball foi uma experiência incrível na minha vida. Não consigo imaginar a minha infância sem essa obra. Até hoje, ainda me pego reassistindo episódios e filmes. Gostaria que minha imaginação ainda fosse a mesma de antes, para poder brincar por horas sem preocupações e passar o tempo ao lado dos personagens que fizeram parte da minha infância. Mas o tempo não perdoa — e não volta mais.</p>
+                         </div>
                     </div>
                 </section>
 
