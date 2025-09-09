@@ -77,10 +77,7 @@ export default function Sobre() {
                 <section className={styles.statsSection}>
                     <h2 className={styles.sectionTitle}>Números Impressionantes</h2>
                     <div className={styles.statsGrid}>
-                        <div className={styles.statCard}>
-                            <div className={styles.statNumber}>260M+</div>
-                            <div className={styles.statLabel}>Cópias Vendidas</div>
-                        </div>
+                        
                         
                         <div className={styles.statCard}>
                             <div className={styles.statNumber}>40+</div>

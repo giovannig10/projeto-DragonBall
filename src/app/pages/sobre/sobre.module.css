@@ -1,11 +1,10 @@
 .pageContainer {
     min-height: 100vh;
-    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
-    color: white;
+    background-color: #fff7ed;
 }
 
 .hero {
-    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 50%, #ffcc02 100%);
+    
     padding: 6rem 2rem;
     text-align: center;
     position: relative;
@@ -19,7 +18,6 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at 30% 70%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
     pointer-events: none;
 }
 
@@ -27,35 +25,22 @@
     max-width: 800px;
     margin: 0 auto;
     position: relative;
-    z-index: 1;
 }
 
 .heroTitle {
     font-size: 4rem;
     font-weight: 900;
-    color: white;
+    color: #1e40af;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
     margin-bottom: 1.5rem;
-    animation: fadeInUp 1s ease-out;
 }
 
 .heroSubtitle {
     font-size: 1.4rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: black;
     margin-bottom: 0;
     animation: fadeInUp 1s ease-out 0.3s both;
     font-weight: 400;
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 .mainContent {
@@ -69,10 +54,7 @@
     font-weight: 800;
     text-align: center;
     margin-bottom: 3rem;
-    background: linear-gradient(135deg, #ff6b35, #f7931e, #ffcc02);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #ff6b35;
     text-shadow: none;
 }
 
@@ -87,18 +69,15 @@
 }
 
 .textCard {
-    background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
-    backdrop-filter: blur(20px);
+    background-color: transparent;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 3rem;
     max-width: 900px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
 }
 
 .textCard:hover {
-    transform: translateY(-5px);
     box-shadow: 0 20px 60px rgba(255, 107, 53, 0.2);
     border-color: rgba(255, 107, 53, 0.3);
 }
@@ -106,7 +85,7 @@
 .personalText {
     font-size: 1.1rem;
     line-height: 1.8;
-    color: rgba(255, 255, 255, 0.9);
+    color: black;
     text-align: justify;
     margin: 0;
     font-weight: 400;
@@ -142,13 +121,13 @@
 .cardTitle {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #ffcc02;
+    color: #1e40af;
     margin-bottom: 1rem;
     text-align: center;
 }
 
 .cardText {
-    color: rgba(255, 255, 255, 0.8);
+    color: black;
     line-height: 1.6;
     text-align: justify;
     font-size: 1rem;
