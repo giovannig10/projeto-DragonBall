@@ -115,3 +115,7 @@
     display: block;
   }
 }
+
+.logoHeader {
+  border-radius: 5rem;
+}

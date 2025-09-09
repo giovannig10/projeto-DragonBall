@@ -1,6 +1,7 @@
 "use client";
-import { useState } from "react";
+import { useState, } from "react";
 import styles from './Header.module.css';
+import Image from "next/image";
 
 export default function Header() {
   const [menuAberto, setMenuAberto] = useState(false);
@@ -11,7 +12,12 @@ export default function Header() {
         {/* Logo */}
         <div className={styles.logo}>
           <div className={styles.logoIcon}>
-            DB
+            <Image className={styles.logoHeader}
+              src="/img/simbolo-goku.jpg"
+              alt="Dragon Ball Icon"
+              width={40}
+              height={40}
+            />
           </div>
           <h1 className={styles.logoText}>
             Dragon Ball Universe

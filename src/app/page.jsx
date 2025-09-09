@@ -31,7 +31,7 @@ export default function Home() {
       <div className={styles.container}>
         <div className={styles.headerSection}>
           <h1 className={styles.title}>
-            Esferas do Dragão
+            Guerreiros Z
           </h1>
 
                               {/* Controles de paginação */}
