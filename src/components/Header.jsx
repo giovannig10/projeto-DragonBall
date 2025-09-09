@@ -26,10 +26,10 @@ export default function Header() {
 
         {/* Menu Desktop */}
         <nav className={styles.nav}>
-          <a href="#" className={styles.navLink}>
+          <a href="/" className={styles.navLink}>
             Personagens
           </a>
-          <a href="#" className={styles.navLink}>
+          <a href="/pages/planetas" className={styles.navLink}>
             Planetas
           </a>
           <a href="#" className={styles.navLink}>
@@ -51,20 +51,8 @@ export default function Header() {
         </button>
       </div>
 
-      {/* Menu Mobile Dropdown */}
-      {menuAberto && (
-        <div className={styles.mobileMenu}>
-          <a href="#" className={styles.mobileMenuLink}>
-            Personagens
-          </a>
-          <a href="#" className={styles.mobileMenuLink}>
-            Planetas
-          </a>
-          <a href="#" className={styles.mobileMenuLink}>
-            Sobre
-          </a>
-        </div>
-      )}
+      
+    
     </header>
   );
 }
