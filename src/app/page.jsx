@@ -4,18 +4,15 @@ import axios from "axios";
 import Image from "next/image";
 import Header from "../components/Header";
 import styles from "./page.module.css";
-import { Pagination} from "antd";
 
 export default function Home() {
   const [usuarios, setUsuarios] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [currentPage, setCurrentPage] = useState(1);
-    const [pageSize, setPageSize] = useState(5);
 
   const buscarUsuarios = async () => {
     setLoading(true);
     try {
-      const response = await axios.get("https://dragonball-api.com/api/characters?limit=0");
+      const response = await axios.get("https://dragonball-api.com/api/characters?limit=58");
       const data = response.data.items
       setUsuarios(data);
       console.log(data);
@@ -26,18 +23,6 @@ export default function Home() {
     }
   }
 
-  const startIndex = (currentPage - 1) * pageSize;
-  const endIndex = startIndex + pageSize;
-  const currentUsuarios = usuarios.slice(startIndex, endIndex);
-
-  const handlePageChange = (page) => {
-    setCurrentPage(page);
-};
-
-const handlePageSizeChange = (current, size) => {
-    setPageSize(size);
-    setCurrentPage(1);
-};
 
 
   return (
@@ -51,16 +36,7 @@ const handlePageSizeChange = (current, size) => {
 
                               {/* Controles de paginação */}
                               <div className={styles.controlsWrapper}>
-                        <Pagination
-                            total={usuarios.length}
-                            showTotal={(total) => `Total ${total} usuários`}
-                            pageSize={pageSize}
-                            current={currentPage}
-                            showSizeChanger={true}
-                            pageSizeOptions={["5", "10", "20", "58"]}
-                            onChange={handlePageChange}
-                            onShowSizeChange={handlePageSizeChange}
-                        />
+                        
                     </div>
 
           <div className={styles.buttonContainer}>
@@ -78,7 +54,7 @@ const handlePageSizeChange = (current, size) => {
 
         <div className={styles.cardsGrid}>
           
-          {currentUsuarios && usuarios.length > 0 ? usuarios.map((usuario) => (
+          {usuarios.length > 0 ? usuarios.map((usuario) => (
             <div 
               key={usuario.id} 
               className={styles.characterCard}
