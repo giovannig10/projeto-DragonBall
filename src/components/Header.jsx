@@ -32,7 +32,7 @@ export default function Header() {
           <a href="/pages/planetas" className={styles.navLink}>
             Planetas
           </a>
-          <a href="#" className={styles.navLink}>
+          <a href="/pages/sobre" className={styles.navLink}>
             Sobre
           </a>
           
